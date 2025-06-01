@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy-blue: #141522;
+  --light-blue: #8BADD3;
+}
+
+body {
+  background-color: var(--navy-blue);
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .monospace {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #141522 0%, #1a1b2e 100%);
+}
+
+.skill-bar {
+  @apply h-2 rounded-full bg-gray-700 overflow-hidden;
+}
+
+.skill-progress {
+  @apply h-full bg-light-blue rounded-full transition-all duration-500;
+}
