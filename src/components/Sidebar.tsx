@@ -45,10 +45,10 @@ export const Sidebar = () => {
         </div>
         
         <div className="flex space-x-4">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-light-blue">
+          <a href="https://github.com/msrishav-28" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-light-blue">
             <Github className="w-5 h-5" />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-light-blue">
+          <a href="https://linkedin.com/in/m-s-rishav-subhin" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-light-blue">
             <Linkedin className="w-5 h-5" />
           </a>
         </div>

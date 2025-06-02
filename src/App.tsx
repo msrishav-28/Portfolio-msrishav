@@ -30,7 +30,7 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
             >
-              Hi, I'm Rishav Subhin!
+              Hi, I'm M S Rishav Subhin!
             </motion.h2>
             <motion.h1 
               className="text-5xl font-mono font-bold mb-6"
@@ -85,7 +85,7 @@ function App() {
           >
             <div className="text-sm text-gray-400 rotate-90 mb-8">Follow me</div>
             <motion.a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/msrishav-28" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-300 hover:text-light-blue"
@@ -94,7 +94,7 @@ function App() {
               <Github className="w-5 h-5" />
             </motion.a>
             <motion.a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://linkedin.com/in/m-s-rishav-subhin" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-300 hover:text-light-blue"
