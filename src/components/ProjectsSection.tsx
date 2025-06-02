@@ -50,7 +50,7 @@ export const ProjectsSection = () => {
                 </span>
               ))}
             </div>
-            
+            <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
