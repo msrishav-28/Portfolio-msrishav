@@ -2,6 +2,13 @@ import React from 'react';
 import { Github, Linkedin, Home, Code, Briefcase, GraduationCap, Mail } from 'lucide-react';
 
 export const Sidebar = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="fixed left-0 top-0 h-full w-64 bg-[#1a1b2e] p-6">
       <div className="flex flex-col h-full">
@@ -12,34 +19,49 @@ export const Sidebar = () => {
         <div className="flex-1">
           <ul className="space-y-4">
             <li>
-              <a href="#overview" className="flex items-center text-gray-300 hover:text-light-blue">
+              <button 
+                onClick={() => scrollToSection('overview')} 
+                className="flex items-center text-gray-300 hover:text-light-blue w-full text-left"
+              >
                 <Home className="w-5 h-5 mr-3" />
                 Overview
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#projects" className="flex items-center text-gray-300 hover:text-light-blue">
+              <button 
+                onClick={() => scrollToSection('projects')} 
+                className="flex items-center text-gray-300 hover:text-light-blue w-full text-left"
+              >
                 <Code className="w-5 h-5 mr-3" />
                 Projects
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#skills" className="flex items-center text-gray-300 hover:text-light-blue">
+              <button 
+                onClick={() => scrollToSection('skills')} 
+                className="flex items-center text-gray-300 hover:text-light-blue w-full text-left"
+              >
                 <Briefcase className="w-5 h-5 mr-3" />
                 Skills
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#education" className="flex items-center text-gray-300 hover:text-light-blue">
+              <button 
+                onClick={() => scrollToSection('education')} 
+                className="flex items-center text-gray-300 hover:text-light-blue w-full text-left"
+              >
                 <GraduationCap className="w-5 h-5 mr-3" />
                 Education
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#contact" className="flex items-center text-gray-300 hover:text-light-blue">
+              <button 
+                onClick={() => scrollToSection('contact')} 
+                className="flex items-center text-gray-300 hover:text-light-blue w-full text-left"
+              >
                 <Mail className="w-5 h-5 mr-3" />
                 Contact
-              </a>
+              </button>
             </li>
           </ul>
         </div>

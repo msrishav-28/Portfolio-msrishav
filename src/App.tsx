@@ -3,9 +3,10 @@ import { Sidebar } from './components/Sidebar';
 import { Header } from './components/Header';
 import { AboutSection } from './components/AboutSection';
 import { ProjectsSection } from './components/ProjectsSection';
-import { ComponentsSection } from './components/ComponentsSection';
 import { TimelineSection } from './components/TimelineSection';
 import { ContactSection } from './components/ContactSection';
+import { EducationSection } from './components/EducationSection';
+import { SkillsSection } from './components/SkillsSection';
 import { Github, Linkedin, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -18,6 +19,7 @@ function App() {
       <main className="ml-64 pt-16">
         {/* Hero Section */}
         <motion.section 
+          id="overview"
           className="min-h-[calc(100vh-4rem)] flex items-center relative p-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -108,8 +110,11 @@ function App() {
         <div className="px-8">
           <AboutSection />
           <TimelineSection />
+          <EducationSection />
+          <SkillsSection />
           <ProjectsSection />
-          <ComponentsSection />
+          {/* Remove this line */}
+          {/* <ComponentsSection /> */}
           <ContactSection />
         </div>
       </main>
