@@ -9,9 +9,6 @@ export const Header = () => {
           <li>
             <a href="/" className="text-gray-300 hover:text-light-blue">Home</a>
           </li>
-          <li>
-            <a href="/documentation" className="text-gray-300 hover:text-light-blue">Documentation</a>
-          </li>
         </ul>
       </nav>
       
