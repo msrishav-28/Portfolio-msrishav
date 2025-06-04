@@ -22,9 +22,6 @@ export const Header = ({ setMobileMenuOpen }: HeaderProps) => {
             <li>
               <a href="/" className="text-gray-300 hover:text-light-blue text-sm lg:text-base">Home</a>
             </li>
-            <li>
-              <a href="/documentation" className="text-gray-300 hover:text-light-blue text-sm lg:text-base">Documentation</a>
-            </li>
           </ul>
         </nav>
       </div>

@@ -7,13 +7,18 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Check if user has a saved preference
-    const savedPreference = localStorage.getItem('portfolioVersion');
-    
-    if (savedPreference) {
-      setIsMobile(savedPreference === 'mobile');
-      setIsLoading(false);
-      return;
+    try {
+      // Check if user has a saved preference
+      const savedPreference = localStorage.getItem('portfolioVersion');
+      
+      if (savedPreference) {
+        setIsMobile(savedPreference === 'mobile');
+        setIsLoading(false);
+        return;
+      }
+    } catch (error) {
+      // localStorage might not be available in some environments
+      console.warn('localStorage not available:', error);
     }
 
     // Auto-detect device
@@ -75,7 +80,11 @@ function App() {
 const VersionSwitcher: React.FC<{ currentVersion: 'mobile' | 'desktop' }> = ({ currentVersion }) => {
   const switchVersion = () => {
     const newVersion = currentVersion === 'mobile' ? 'desktop' : 'mobile';
-    localStorage.setItem('portfolioVersion', newVersion);
+    try {
+      localStorage.setItem('portfolioVersion', newVersion);
+    } catch (error) {
+      console.warn('Could not save preference:', error);
+    }
     window.location.reload(); // Simple reload to apply changes
   };
 

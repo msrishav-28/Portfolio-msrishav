@@ -113,8 +113,6 @@ function App() {
           <EducationSection />
           <SkillsSection />
           <ProjectsSection />
-          {/* Remove this line */}
-          {/* <ComponentsSection /> */}
           <ContactSection />
         </div>
       </main>
