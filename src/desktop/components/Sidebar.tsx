@@ -13,7 +13,7 @@ export const Sidebar = () => {
     <nav className="fixed left-0 top-0 h-full w-64 bg-[#1a1b2e] p-6">
       <div className="flex flex-col h-full">
         <div className="mb-12">
-          <h1 className="text-xl font-mono font-bold text-white">Rishav S.</h1>
+          <h1 className="text-xl font-mono font-bold text-white">M S Rishav</h1>
         </div>
         
         <div className="flex-1">
