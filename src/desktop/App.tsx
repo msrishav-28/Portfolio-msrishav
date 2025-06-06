@@ -79,6 +79,7 @@ function App() {
           </div>
           
           {/* Social Follow Sidebar */}
+          {/* 
           <motion.div 
             className="fixed right-8 top-1/2 -translate-y-1/2 flex flex-col items-center space-y-4"
             initial={{ opacity: 0, x: 20 }}
@@ -105,6 +106,7 @@ function App() {
               <Linkedin className="w-5 h-5" />
             </motion.a>
           </motion.div>
+          */}
         </motion.section>
 
         <div className="px-8">
